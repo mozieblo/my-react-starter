@@ -1,3 +1,5 @@
 {
-  "app.content": "My React starter."
+    "about.content": "About page.",
+    "contact.content": "Contact page.",
+    "home.content": "My React starter."
 }

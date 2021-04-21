@@ -1,9 +1,21 @@
 import React, { FC } from 'react';
-import { useIntl } from 'react-intl';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import { ROUTES } from './router/router';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 
 const App: FC = () => {
-  const intl = useIntl();
-  return <div>{intl.formatMessage({ id: 'app.content' })}</div>;
+    const { HOME, ABOUT, CONTACT } = ROUTES;
+
+    return (
+        <Switch>
+            <Route path={HOME} exact component={Home} />
+            <Route path={ABOUT} exact component={About} />
+            <Route path={CONTACT} exact component={Contact} />
+            <Redirect to={HOME} />
+        </Switch>
+    );
 };
 
 export default App;

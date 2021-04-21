@@ -1,3 +1,5 @@
 {
-  "app.content": "Мой стартер React."
+    "about.content": "О странице.",
+    "contact.content": "Контактная страница.",
+    "home.content": "Мой стартер React."
 }
