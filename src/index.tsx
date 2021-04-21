@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { IntlProvider } from 'react-intl';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { messages, appLang } from './translations';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <IntlProvider locale={appLang} messages={messages[appLang]}>
+      <App />
+    </IntlProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
