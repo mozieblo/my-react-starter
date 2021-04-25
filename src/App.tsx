@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { ROUTES } from './router/router';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
+import ContactPage from './pages/contact/ContactPage';
 import { globalTheme } from './styles/theme';
 
 const App: FC = () => {
@@ -15,7 +15,7 @@ const App: FC = () => {
             <Switch>
                 <Route path={HOME} exact component={Home} />
                 <Route path={ABOUT} exact component={About} />
-                <Route path={CONTACT} exact component={Contact} />
+                <Route path={CONTACT} exact component={ContactPage} />
                 <Redirect to={HOME} />
             </Switch>
         </ThemeProvider>

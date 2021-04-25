@@ -1,5 +1,6 @@
 {
     "about.content": "О странице.",
     "contact.content": "Контактная страница.",
+    "contact.btn": "Нажмите",
     "home.content": "Мой стартер React."
 }
