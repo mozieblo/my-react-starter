@@ -39,11 +39,7 @@ const ContactPage: FC = () => {
             </button>
             {contacts?.length
                 ? contacts.map((contact: Contact) => (
-                      <button
-                          key={contact.id}
-                          type="button"
-                          onClick={() => removeContactFromStore(contact.id)}
-                      >
+                      <button key={contact.id} type="button" onClick={() => removeContactFromStore(contact.id)}>
                           {contact.id}
                       </button>
                   ))

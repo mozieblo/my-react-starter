@@ -11,7 +11,10 @@ const initialStateSecond: IInitialStateSecond = {
     text: ''
 };
 
-const firstReducer = (state = initialStateFirst, action: AppActions): IInitialStateFirst => {
+export const firstReducer = (
+    state = initialStateFirst,
+    action: AppActions | Record<string, never> = {}
+): IInitialStateFirst => {
     switch (action.type) {
         case ADD_CONTACT:
             return {
@@ -30,7 +33,10 @@ const firstReducer = (state = initialStateFirst, action: AppActions): IInitialSt
     }
 };
 
-const secondReducer = (state = initialStateSecond, action: AppActions): IInitialStateSecond => {
+export const secondReducer = (
+    state = initialStateSecond,
+    action: AppActions | Record<string, never> = {}
+): IInitialStateSecond => {
     switch (action.type) {
         case ADD_DEFAULT_TEXT:
             return {

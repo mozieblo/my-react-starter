@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { ROUTES } from './router/router';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import ContactPage from './pages/contact/ContactPage';
+import ContactPage from './pages/contactPage/ContactPage';
 import { globalTheme } from './styles/theme';
 
 const App: FC = () => {
